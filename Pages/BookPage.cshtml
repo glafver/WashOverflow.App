@@ -9,6 +9,7 @@
     <select id="Station" name="SelectedStationId" asp-for="SelectedStationId" required>
         @if (Model.Stations != null && Model.Stations.Any())
         {
+            <option value="">Select a station</option>
             @foreach (var Station in Model.Stations)
             {
                 <option value="@Station.Id">@Station.Name</option>

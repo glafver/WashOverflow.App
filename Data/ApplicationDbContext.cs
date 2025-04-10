@@ -11,13 +11,13 @@ namespace WashOverflowV2.Data
         {
         }
 
-        public DbSet<Booking> Bookings { get; set; }
-        public DbSet<Station> Stations { get; set; }
-        public DbSet<Package> Packages { get; set; }
-        public DbSet<Feature> Features { get; set; }
-        public DbSet<PackageFeature> PackageFeatures { get; set; }
+        public virtual DbSet<Booking> Bookings { get; set; }
+        public virtual DbSet<Station> Stations { get; set; }
+        public virtual DbSet<Package> Packages { get; set; }
+        public virtual DbSet<Feature> Features { get; set; }
+        public virtual DbSet<PackageFeature> PackageFeatures { get; set; }
 
-        public DbSet<StationPackage> StationPackages { get; set; }
+        public virtual DbSet<StationPackage> StationPackages { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
